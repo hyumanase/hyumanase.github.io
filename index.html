@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<title>hyumanase dev blog</title>
 		<script
-			src="https://scripts.spearly.com/dev/content_types/ct-9AjyuiMYaE8JprNftRdb/list.js"
-			defer="true"
+			src="https://spearly-static.s3-ap-northeast-1.amazonaws.com/js/main.js"
+			defer
 		></script>
 		<script>
 			window.addEventListener(
@@ -21,11 +21,11 @@
 		</script>
 	</head>
 	<body>
-		<dev-blog-list>
+		<dev-blog-item data-id="c-kSRtqJ6XzA2bWU4rnOxV" data-lock="true">
 			<h1>{%= dev-blog_title %}</h1>
 			<img src="{%= dev-blog_image %}" />
 			<div style="background: url('{%= dev-blog_image %}')"></div>
 			<p>{%= dev-blog_description %}</p>
-		</dev-blog-list>
+		</dev-blog-item>
 	</body>
 </html>
