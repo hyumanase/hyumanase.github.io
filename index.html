@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>hyumanase dev blog</title>
-    <link rel="stylesheet" href="stylesheet.css" />
-    <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
-    <script src="https://scripts.spearly.com/live/content_types/ct-tgW7bqkGLUdmaQnSwCrf/list.js" defer="true"></script>
-    <script>window.addEventListener('DOMContentLoaded',()=>{const t=document.querySelectorAll(':not(:defined)');for(const e of t){e.style.visibility="hidden";}},{once:true})</script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <a href="https://hyumanase.github.io/" class="header-title">hyumanase dev blog</a>
-          <p class="header-text">
-            鹿児島でプログラミング修行中です。勉強の記録を残していきます。
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-<dev-blog2-list data-item-page-path="item.html" data-perpage="10" >
-  <h1>{%= dev-blog2_title %}</h1>
-  <img src="{%= dev-blog2_image %}" />
-  <div style="background: url('{%= dev-blog2_image %}');"></div>
-  <p>{%= dev-blog2_description %}</p>
-</dev-blog2-list>
-        <!-- <h2>技術記事</h2>
-          <dev-blog-item data-id="c-kSRtqJ6XzA2bWU4rnOxV" data-lock="true">
-            <h1>{%= dev-blog_title %}</h1>
-            <p>{%= dev-blog_naiyo-desu %}</p>
-          </dev-blog-item> -->
-        <h2>Memo</h2>
-        <ul class="memo-list">
-          <li>
-            <span class="memo-date">Sep 18, 2020</span>
-            <h3>
-              Macで矢印のショートカット: (全角で) zl【→】zh【←】zk【↑】zj【↓】
-            </h3>
-          </li>
-        </ul>
-        <h2>Posts</h2>
-        <ul>
-          <li>
-            <h3>準備中</h3>
-          </li>
-        </ul>
-      <div class="container"></div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="footer-left">
-          <ul class="social-media-lists">
-            <li class="social-media-list">
-              <a href="https://twitter.com/hyumanase">Twitter</a>
-            </li>
-            <li class="social-media-list">
-              <a href="https://github.com/hyumanase">GitHub</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <p>Since: September 2020</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<title>hyumanase dev blog</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link
+			rel="stylesheet"
+			href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+		/>
+		<script
+			src="https://spearly-static.s3-ap-northeast-1.amazonaws.com/js/main.js"
+			defer
+		></script>
+		<script>
+			window.addEventListener(
+				"DOMContentLoaded",
+				() => {
+					const t = document.querySelectorAll(":not(:defined)");
+					for (const e of t) {
+						e.style.visibility = "hidden";
+					}
+				},
+				{ once: true }
+			);
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-left">
+					<a href="https://hyumanase.github.io/" class="header-title"
+						>hyumanase dev blog</a
+					>
+					<p class="header-text">
+						鹿児島でプログラミング修行中です。勉強の記録を残していきます。
+					</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<h2>技術記事</h2>
+				<dev-blog-item data-id="c-kSRtqJ6XzA2bWU4rnOxV" data-lock="true">
+					<h1>{%= dev-blog_title %}</h1>
+					<p>{%= dev-blog_naiyo-desu %}</p>
+				</dev-blog-item>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="footer-left">
+					<ul class="social-media-lists">
+						<li class="social-media-list">
+							<a href="https://twitter.com/hyumanase">Twitter</a>
+						</li>
+						<li class="social-media-list">
+							<a href="https://github.com/hyumanase">GitHub</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<p>Since: September 2020</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
