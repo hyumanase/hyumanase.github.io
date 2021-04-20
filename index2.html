@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>コンテンツの表示</title>
+		<title>コンテンツリストの表示</title>
 		<script
-			src="https://spearly-static.s3-ap-northeast-1.amazonaws.com/js/main.js"
-			defer
+			src="https://scripts.spearly.com/dev/content_types/ct-9AjyuiMYaE8JprNftRdb/list.js"
+			defer="true"
 		></script>
 		<script>
 			window.addEventListener(
@@ -21,11 +21,11 @@
 		</script>
 	</head>
 	<body>
-		<h1>埋め込みタグ動作確認(コンテンツの表示)</h1>
-		<h2>コンテンツの表示=>NG</h2>
-		<dev-blog-item data-id="c-kSRtqJ6XzA2bWU4rnOxV" data-lock="true">
+		<h1>埋め込みタグ動作確認(コンテンツリストの表示)</h1>
+		<h2>コンテンツリストの表示=>OK</h2>
+		<dev-blog-list data-item-page-path="item.html">
 			<h1>{%= dev-blog_title %}</h1>
 			<p>{%= dev-blog_description %}</p>
-		</dev-blog-item>
+		</dev-blog-list>
 	</body>
 </html>
