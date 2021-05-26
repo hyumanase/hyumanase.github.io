@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
-		<meta charset="utf-8" />
-		<title>コンテンツの表示2021/05/17</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Froala -->
+		<link
+			href="https://spearly-cms-staging-assets.s3-ap-northeast-1.amazonaws.com/froala_style.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
 		<script
-			src="https://scripts.spearly.xyz/content_types/ct-QP1jqF9m4OXBeKUZ2axI/list.js"
-			defer="true"
+			src="https://spearly-static.s3-ap-northeast-1.amazonaws.com/js/staging/main.js"
+			defer
 		></script>
 		<script>
 			window.addEventListener(
@@ -19,14 +26,11 @@
 				{ once: true }
 			);
 		</script>
+		<title>テスト2021/05/26</title>
 	</head>
 	<body>
-		<h1>test desu 2021/05/17</h1>
-		<rain-list>
-			<h1>{%= rain_detail_text %}</h1>
-			<h1>{%= rain_no %}</h1>
-			<h1>{%= rain_title %}</h1>
-		</rain-list>
-		<p>test end desu</p>
+		<dev-blog-item>
+			<h1>{%= dev-blog_naiyo-desu %}</h1>
+		</dev-blog-item>
 	</body>
 </html>

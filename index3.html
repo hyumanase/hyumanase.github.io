@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>コンテンツの表示2021/05/17</title>
+		<script
+			src="https://scripts.spearly.xyz/content_types/ct-QP1jqF9m4OXBeKUZ2axI/list.js"
+			defer="true"
+		></script>
+		<script>
+			window.addEventListener(
+				"DOMContentLoaded",
+				() => {
+					const t = document.querySelectorAll(":not(:defined)");
+					for (const e of t) {
+						e.style.visibility = "hidden";
+					}
+				},
+				{ once: true }
+			);
+		</script>
+	</head>
+	<body>
+		<h1>test desu 2021/05/17</h1>
+		<rain-list>
+			<h1>{%= rain_detail_text %}</h1>
+			<h1>{%= rain_no %}</h1>
+			<h1>{%= rain_title %}</h1>
+		</rain-list>
+		<p>test end desu</p>
+	</body>
+</html>
